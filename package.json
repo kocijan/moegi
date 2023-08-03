@@ -14,7 +14,7 @@
     "@preact/signals": "^1.1.5",
     "@unocss/reset": "^0.54.0",
     "kuroshiro": "github:sglkc/kuroshiro-ts",
-    "kuroshiro-analyzer-kuromoji": "github:sglkc/kuroshiro-analyzer-kuromoji-ts",
+    "kuroshiro-analyzer-kuromoji": "github:sglkc/kuroshiro-analyzer-kuromoji-ts#build/kuromoji",
     "preact": "^10.16.0"
   },
   "devDependencies": {

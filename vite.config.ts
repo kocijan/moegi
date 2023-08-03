@@ -22,12 +22,12 @@ export default defineConfig(() => {
       shouldCopyDict && copy({
         targets: [
           {
-            src: 'node_modules/**/kuromoji/dict/*.dat',
+            src: 'node_modules/**/kuromoji/dict/*.dat.gz',
             dest: 'dist/dict',
             rename: ''
           },
           {
-            src: 'node_modules/**/kuromoji/dict/*.dat',
+            src: 'node_modules/**/kuromoji/dict/*.dat.gz',
             dest: 'public/dict',
             rename: ''
           }
@@ -39,12 +39,9 @@ export default defineConfig(() => {
       })
     ],
     resolve: {
-      alias: [
-        {
-          find: '@',
-          replacement: resolve(__dirname, 'src')
-          }
-      ]
+      alias: {
+        '@': resolve(__dirname, 'src')
+      },
     },
     server: {
       port: 5172,
